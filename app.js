@@ -24,7 +24,7 @@ const transporter = nodemailer.createTransport({
 
 //send Email
 
-cron.schedule('*****', () =>{
+cron.schedule('* * * * *', () =>{
 
     transporter.sendMail(mailOptions, (error, info) => {
         if (error) {
